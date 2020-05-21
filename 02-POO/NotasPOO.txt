@@ -1,0 +1,95 @@
+POO(Programación Orientada A Objetos) =>
+Es un paradigma o una forma de programar que nos permite obtener los objetos del la vida real y transformarlos a software.
+-----------------------------------------
+
+CLASES =>
+Es el molde, plantilla, esquema o lienzo que da vida a la transformación de los objetos de la vida real a software. Es decir, los objetos de la vida real, se van a plasmar en clases y dichas clases van a resaltar las caracteristicas o propiedades de los objetos del mundo real, esto tambien se conoce como el ESTADO de un objeto. Ademas, de su comportamiento o usabilidad que se le puede dar en el mundo real y esto se conoce como métodos o funciones.
+
+METODO CONSTRUCTOR => Es el primer comportamiento, acción o usabilidad del objeto en el momento de su creación.
+
+EJEMPLO =>
+class Persona {
+  (PROPIEDADES)
+  nombre:string;
+  apellido:string;
+
+  (MÉTODOS O FUNCIONES)
+  constructor(nombre:string, apellido:string) {
+    this.nombre = nombre;
+    this.apellido = apellido;
+  }
+
+  saludar() {
+    return 'Hola Amigos';
+  }
+}
+-----------------------------------------
+
+OBJETO => El objeto es la creación o instancia de un elmento o una variable que va contener, todas las propiedades y comportamientos de la clase o lienzo de donde se creo.
+
+EJEMPLO =>
+const persona = new Persona('daniel', 'yepez');
+persona.saludar();
+
+ELEMENTOS O ETAPAS INTERNAS DE UN OBJETO CREADO =>
+ESTADO(Propiedades)
+COMPORTAMIENTO(métodos)
+IDENTIDAD(Un objeto debe ser único y no se puede repetir)
+-----------------------------------------
+
+PILARES DE LA POO(Programación Orientada A Objetos) =>
+1. Abstracción.
+2. Encapsulamiento.
+3. Herencia.
+4. Polimorfismo.
+5. Relaciones.
+
+1.ABSTRACCIÓN => Obtener los objetos de la vida real y convertirlos en software.
+
+2.ENCAPSULAMIENTO => Los objetos no deben mostrarle al usuario caracteristicas o comportamientos que no sea de su beneficio para interactuar con el programa, ni mucho menos que este les pueda modifcar su estado(Propiedades) o usabilidad.
+
+3.HERENCIA => Heredar las cualidades de otra clase o una clase base o padre como se le conoce.
+
+4.POLIMORFISMO => Las múltiples formas que puede obtener un objeto si comparte la misma clase o interfaz.
+
+  INTERFACES => Son un contrato que obliga a una clase a implementar las propiedades y/o  métodos definidos, pero no implementados en dicha interfaz, y que sea implementados por una clase.
+
+  CLASES ABSTRACTAS => Son clases que no se pueden instanciar, es decir, no puede crear objetos del mundo real, solo pueden ser implementadas a través de la herencia.
+  es decir, pueden asignar o definir un comportamiento base para las clases que vayan a heredar de dicha clase ABSTRACTA.
+
+  DIFERENCIAS ENTRE CLASES ABSTRACTAS E INTERFACES =>
+  CLASES ABSTRACTAS =>
+  Limitadas a una sola implementacion.
+  pueden definir un comportamiento base.
+
+  INTERFACES =>
+  No tienen limitación de implementacion.
+  Exponen métodos Abstractos(Sin Lógica).
+------------------------------------------------------------
+
+RELACIONES =>
+Las relaciones entre clases es la capacidad de un objeto guardar referencia a otro objeto para su comunicación.
+
+Existen DOS TIPOS DE RELACIÓN =>
+1.Asociación.
+2.Colaboración.
+
+ASOCIACIÓN =>
+Una clase pertenece a otra clase, ya sea por una relación de UNO a UNO, de UNO a MUCHOS o MUCHOS a MUCHOS.
+
+ASOCIACIÓN(Uno a Uno) =>
+Una clase mantiene una Asociación de a uno con otra clase.
+UNA PROPIEDAD DEL USUARIO HACE REFERENCIA A LA CLASE DE LA DIRECCIÓN(ver imagnes UNOaUNO).
+
+ASOCIACIÓN(Uno a Muchos) =>
+Una clase mantiene una Asociación con otra clase a través de una colección(Array).
+
+ASOCIACIÓN(Muchos a Muchos) =>
+La Asociación se da en ambos lados a través de una colección(Array).
+---------------------------------------
+
+COLABORACIÓN =>
+Es cuando Las clases hacen referencia a otras clases para lograr el cometido.
+EJEMPLO TEÓRICO => Cuando un metodo espera como parametro de entrada la referencia a otra clase o cuando un metodo retorna como parametro de salida la referencia a otra clase.
+
+La Colaboración se da a través de una referencia de una clase con el fin de lograr un cometido. Una o varias clases deben ponerse de acuerdo para trabajar en equipo.

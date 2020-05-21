@@ -1,0 +1,125 @@
+CREACIÓN E ITERACIÓN DEL DESARROLLO DE SOFTWARE => 
+01. Recoge Requerimientos.
+02. Describe la aplicación.
+03. Identifica los objetos principales.
+04. Describe las interacciones(Entre Los Objetos).
+05. Crear un diagrama de clases.
+
+01-Que necesita hacer la aplicación, que problema se debe resolver. Se debe ser especifico y escribir especificamente todo lo que necesitamos que haga la aplicación. En conclusión, se debe escribir que es lo que realmente debe hacer la aplicación Para que las ideas no choquen con algo que la aplicación no necesita hacer.
+
+02-Describe en un parrafo y en un lenguaje conversacional, es decir, que las personas puedan entender como se debe usar la aplicación, que debe hacer la aplicación y a quién va dirigida.
+En este puento se deben incluir, los casos de uso y las historias de usuario.
+
+03-Aqui se empiezan a identificar realmente las clases que se van a usar. Esto se obtiene del paso anterior, es decir, de la descripción y de las historias de usuarios.
+
+04-Describimos formalmente las interacciones entre los objetos identificados anteriormente. es decir, los comportamientos de cada objeto y como se relacionan o interactuan con los demás objetos y también en que orden necesitan ejecutarsen.
+Aqui podemos incluir un diagrama secuencial o de secuencia.
+
+05-Creamos las clases que necesitamos y aqui utilizamos realmente el paradigma de programación orientada a objetos y debemos ser muy especificos con todos los conceptos que conforman este paradigma, como por ejemplo, la herencia y/o polimorfismo.
+-----------------------------------------------------------------------------------------
+
+PROFUNDIZANDO EN LA RECOLECCIÓN DE REQUERIMIENTOS(Punto #1) =>
+En este punto nos debemos preguntar, que se requiere que haga o que debe hacer la aplicación.
+
+Requerimientos FUNCIONALES => 
+Este es el núcleo de los requerimientos por que aquí se debe decir que es lo que hace o que debe hacer tu aplicación.
+
+-Que necesita hacer la aplicación.
+-Que capacidades/caracteristicas va a tener la aplicación.
+-Porque necesita hacerlo y tener esas caracteristicas la aplicación.
+
+Requerimientos NO FUNCIONALES =>
+Son los requerimientos que no impiden el desarrollo o flujo de la aplicación, si no se llegan a desarrollar.
+Otras Cosas como:
+
+-Ayuda para los usuarios dentro de la aplicación.
+-La documentacón que necesita la aplicación.
+-Aspectos Legales relacionados con la aplicación.
+-Apectos del rendimiento(TIEMPOS DE RESPUESTA) de la aplicación.
+-Soporte se a las 2am deja de funcionar la aplicación, quién se encarga de esa parte.
+-Seguridad(Depende mucho del cliente, se es importante, pasa a los funcionales y si no, se deja en los no funcionales).
+
+EJEMPLOS DE REQUERIMIENTOS FUNCIONALES =>
+Los requierimientos funcionales muchas veces empiezan con una frase con lo que el sistema de información debe o no debe hacer.
+
+1.El sistema debe mostrar los latidos del corazón, la temperatura y la presión sanguínea de un paciente conectado al monitor.
+
+2.La aplicación debe permitir al usuario buscar clientes por apellido, número de teléfono o número de pedido.
+
+3.El programa debe permitir generar avisos por email.
+
+4.La aplicación debe permitir al usuario crear mensajes de 150 caracteres.
+
+5.La pliacación debe continuar funcionando sin conexión a la red.
+
+REQUERIMIENTO EXTENSO =>
+6.El sistema debe producir automáticamente de manera mensual Análisis Comparativos(usando el mes actual y comparándolo con el mismo mes del periodo anterior) reportando por: Producto(Unidades vendidad y euros), Categoria de producto, Cliente, Departamento, Región. Los PDF se deben generar automáticamente y ser enviados por email a cada persona del grupo de administradores el primer día del mes.
+
+EJEMPLOS DE REQUERIMIENTOS NO FUNCIONALES =>
+1. El sistema debe responder a las búsquedas en 2 segundos.
+
+2.Ayuda telefonica disponible de lunes a viernes, de 8 a 6.
+
+3.Cumplir con todas las restricciones legales vigentes.
+
+4.Estar disponible el 99 por ciento del tiempo, del horario laboral.
+-----------------------------------------------------------------------------------------
+
+ENFOQUE FURPS =>
+Una forma de recordar los elementos incluidos en esta lista, es decir, esta diseña para seguir uno a uno los pasos y comprobar si nuestro sistema los cumple.
+
+Functional requirements / requerimientos funcionales.
+Usability requirements / requerimientos de usabilidad.
+Reliability requirements / requerimientos de fiabilidad.
+Performance requirements / requerimientos de rendimiento.
+Supportability requirements / requerimientos de sorporte.
+
++ Requerimientos de forma, requerimientos de implementación, requerimientos de interfaz, requerimientos fisicos.
+
+CREAR UNA LISTA CON TODOS LOS REQUERIMIENTOS RECOPILADOS.
+-----------------------------------------------------------------------------------------
+
+UTILIZACIÓN DE LOS CASOS DE USOS(Punto #2) =>
+Este paso nos ayudará a describir nuestra aplicación más en detalle y este paso nos ayudará a aclarar que clases necesitamos crear realmente.
+
+Por tal motivo debemos cambiar el enfoque de que necesita hacer nuestro sistema a un enfoque basado en el usuario, es decir, como el usuario cumple un determinado objetivo con nuestra aplicación.
+
+NOTA = Un usuario típico o no técnico de nuestra aplicación deberia ser capaz de leer y entender los requerimientos o conceptos que en este paso se presentan.
+
+AQUI EXISTEN DOS FORMATOS EN EL PROCESO DE DISEÑO =>
+CASOS DE USO.
+HISTORIAS DE USUARIO.
+
+ELEMENTOS DE LOS CASOS DE USO =>
+ACTOR.
+TITUTLO.
+ESCENARIO =>(Es el paso a paso del actor para lograr su objetivo, la descripcion debe ser centrada en la intención y no en el pseudocodigo del sistema).
+
+IDENTIFICANDO LOS ACTORES DE LA APLICACIÓN => 
+Un actor es un usuario u otro sistema de información diferente al que estamos creando, que vive o esta ubicado por fuera de nuestro sistema en creación, pero necesita, entrar a este para ejecutar una o diferentes tareas y poder lograr un objetivo.
+
+INDENTIFICANDO LOS ESCENARIOS DE LOS ACTORES =>
+Un escenario de caso de uso lo que busca generalmente es describir un objetivo que un actor pueda cumplir con un solo encuentro o con una sola iteración dentro de esa acción.
+Aqui estamos enfocados en el ususario y lo más importante en su intención de lograr un objetivo y obtener un  resultado.
+
+Este escenario se debe describir con un paso a paso, pero debe ser enfocado y solo centrado en la intención del ususario, y no en tanto detalle de programación, solo la intención del usuario para lograr un objetivo claro.(VER IMAGEN)
+
+HISTORIA DE USUARIO =>
+Es más sencillo y más corto que un caso de uso, solo se describe un pequeño escenario desde la perspectiva de un usuario centrado en su objetivo, en lugar del sistema, es decir, el usuario que es lo que quiere hacer y por que quiere hacerlo.
+
+EJEMPLO =>
+COMO..... (QUIÉN)
+QUIERO..... (OBJETIVO QUE VA A LOGRAR)
+PARA....... (BENEFICIO QUE SE VA A OBTENER U OBJETIVO LOGRADO)
+
+EJEMPLO =>
+COMO....(cliente del banco)
+QUIERO....(cambiar mi pin actual)
+PARA.....(no tener que ir a una sucursal)
+-----------------------------------------------------------------------------------------
+
+
+
+
+
+
