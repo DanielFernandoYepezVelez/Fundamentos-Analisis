@@ -1,5 +1,6 @@
 POO(Programación Orientada A Objetos) =>
-Es un paradigma o una forma de programar que nos permite obtener los objetos del la vida real y transformarlos a software.
+Es un paradigma o una forma de programar que nos permite obtener los objetos del la vida real, 
+imaginaria, abstracta o mental y transformarlos a software.
 -----------------------------------------
 
 CLASES =>
@@ -77,15 +78,20 @@ Existen DOS TIPOS DE RELACIÓN =>
 ASOCIACIÓN =>
 Una clase pertenece a otra clase, ya sea por una relación de UNO a UNO, de UNO a MUCHOS o MUCHOS a MUCHOS.
 
+NOTA IMPORTANTE ASOCIACIÓN => Una propiedad de una clase tiene el tipo de dato de la clase a la cual se hace referencia, es decir, a la cual se esta haciendo la asociación.
+
+EJEMPLO NOTA IMPORTANTE =>
+clase1 ----------> clase2 => Un atributo de la clase uno va a tener el tipo de dato de la clase2, por que es donde esta apuntando la referencia o la asociación(Ver Imagen Asociación Coursera).
+
 ASOCIACIÓN(Uno a Uno) =>
 Una clase mantiene una Asociación de a uno con otra clase.
 UNA PROPIEDAD DEL USUARIO HACE REFERENCIA A LA CLASE DE LA DIRECCIÓN(ver imagnes UNOaUNO).
 
 ASOCIACIÓN(Uno a Muchos) =>
-Una clase mantiene una Asociación con otra clase a través de una colección(Array).
+Una clase mantiene una Asociación con otra clase a través de una colección(Array) (ver imagnes UNOaMUCHOS).
 
 ASOCIACIÓN(Muchos a Muchos) =>
-La Asociación se da en ambos lados a través de una colección(Array).
+La Asociación se da en ambos lados a través de una colección(Array) (ver imagnes MUCHOSaMUCHOS).
 ---------------------------------------
 
 COLABORACIÓN =>
@@ -93,3 +99,14 @@ Es cuando Las clases hacen referencia a otras clases para lograr el cometido.
 EJEMPLO TEÓRICO => Cuando un metodo espera como parametro de entrada la referencia a otra clase o cuando un metodo retorna como parametro de salida la referencia a otra clase.
 
 La Colaboración se da a través de una referencia de una clase con el fin de lograr un cometido. Una o varias clases deben ponerse de acuerdo para trabajar en equipo.
+
+clase1 ----------> clase2 => Un parametro o el tipo de dato retornado por un método de la clase uno va a tener el tipo de dato de la clase2, por que es donde esta apuntando la referencia o la COLABORACIÓN(Ver Imagen COLABORACIÓN).
+
+
+========================= Notas Nuevas Para Tener En Cuenta =============================
+
+DEPENDENCIA => Generalmente se relaciona el metodo main con las clases u objetos que se instancien o se este utilizando dentro del metodo main. se representa asi (clase main -----> clase utilizada dentro del metodo main)
+
+ASOCIACIÓN => Es el tipo de dato que se utiliza de una clase dentro de otra clase, ya sea para tipar un atributo o el retorno de un método. se reprenseta asi (clase del tipo -----> clase donde se aplica dicho tipado) la linea no es puntiada es continua.
+
+AGREGACIÓN => Es el tipo de dato que se utiliza de una clase dentro de otra clase, pero generalmente es un tipo de dato array por que es la agregación de mas de un elemento o una colección, es muy similar a una relación de uno a muchos.
